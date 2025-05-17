@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maíusculas e Minúsculas, Medidas de String e Marcação de Texto</title>
+   <style>
+   body {
+    background-color: rebeccapurple;
+    font: Arial;  
+    color: white;  
+    }
+    hr{
+        border: none;
+        height: 2px;
+        background-color: black;
+        font: Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Maíusculas e Minúsculas, Medidas de String e Marcação de Texto</h1>
+    <hr>
+    <h2>palavra.length para medir a string</h2>
+    <h2>palavra.toUpperCase() para letras maiúsculas</h2>
+    <h2>palavra.toLowerCase() para letras minúsculas</h2>
+    <hr>
+        <h4><strong>Use &lt;strong&gt; ou &lt;b&gt; para negrito </strong></h4>
+        <h4><em>Use &lt;em&gt; ou &lt;i&gt; para itálico </em></h4>
+        <h4><del>Use &lt;del&gt; ou &lt;s&gt; para riscado </del></h4>
+        <h4><strong>Use &lt;strong&gt; ou &lt;b&gt; para negrito </strong></h4>
+        <h4><u>Use &lt;u&gt; para sublinhado </u></h4>
+        <h4><mark>Use &lt;mark&gt; para fundo amarelo </mark></h4>
+        <h4><code>Use &lt;code&gt; para código </code></h4>
+        <h4><blockquote>Use &lt;blockquote&gt; para citação</blockquote></h4>
+        <hr>
+    <script>
+        var palavra = window.prompt("Digite uma palavra: ")
+        var numero = Number(window.prompt("Digite agora um número decimal utilizando ponto : "))
+        document.writeln(`<h3>${palavra} tem ${palavra.length} letras</h3>`)//document.writeln serve para escrever no documento algo, podendo guardar uma variável principalmente
+        document.writeln(`<h3>${palavra} em letras minúsculas fica ${palavra.toLowerCase()}</h3>`)
+        document.writeln(`<h3>${palavra} em letras maiusculas fica ${palavra.toUpperCase()}</h3><hr>`)
+        document.writeln(`<h3>toFixed() Corrige o número para duas casas decimais ${numero.toFixed(2)}</h3>`)//põe duas casas decimais
+        document.writeln(`<h3>Trocando o ponto pela vírgula fica ${numero.toFixed(2).replace(".", ",")}</h3>`)
+        document.writeln(`<h3>Em reais fica ${numero.toLocaleString("pt-br", {style: "currency", currency: "BRL"})}</h3>`)
+    </script>
+</body>
+</html>

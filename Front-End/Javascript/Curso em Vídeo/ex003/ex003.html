@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Comentário em HTML-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma e concatenação</title>
+    <style>
+        /*Comentário em CSS se escreve assim */
+       h1{
+        color: red;
+       }
+       body{background-color: rebeccapurple;
+        color: white;
+        font: normal 50pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //Comentário em Javascript se escreve assim
+        var numero1 = window.prompt('Digite um número: ')//Fornece interatividade, o cliente pode colocar um valor nessa janela
+        var numero2 = window.prompt('Digite outro número: ')
+        //var numero1 = Number(window.prompt("Digite um número")) -> Outra forma de fazer também
+        //Temos Number(x), Number.parseInt(x) e Number.parseFloat também
+        var soma = String(numero1) + numero2.toString()//A variável já se encontra como String mas é só para lembrar o que foi aprendido durante a aula
+        window.alert("A concatenação dos dois números é: " + soma)
+        soma = 0
+        var soma = Number(numero1) + Number(numero2)
+        window.alert(`A soma dos dois números é: ${soma}`)
+        //window.alert("A soma dos dois números é: " + soma) -> Outra forma de fazer também
+   </script>
+</body>
+</html>

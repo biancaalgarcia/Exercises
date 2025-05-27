@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore DOM</title>
+    <style>
+        body{
+            background-color: rgb(65, 160, 250);
+            color: white;
+            font: normal 18pt Comic Sans MS
+        }
+        #msg {
+        cursor: pointer; /*Deixa o mouse com o dedinho aberto*/
+        transition: color .2s;
+        }
+        #msg:hover{/* Enquanto o mouse estiver em cima do span */
+            color:gray
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <hr>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <p>Aqui vai o resultado</p>
+    <span id = "msg">Clique em mim</span>
+    <br>
+    <script>
+        window.document.write("window.document.charset para mostrar o charset: ex.: ")
+        window.document.write(window.document.charset + "<br>")
+        window.document.write("window.navigator.appName para descobrir o nome do navegador: ex.: ")
+        window.document.write(window.navigator.appName + "<br>")
+        window.document.write("window.document.URL para descobrir o link/diretório do servidor: ex.: ")
+        window.document.write(window.document.URL)
+        window.document.write("<hr>")
+        window.document.write("Com window.document.getElementsByTagName()[] podemos escolher qualquer parágrafo ")
+        var corpo = window.document.body
+        var paragrafoCopia = window.document.getElementsByTagName("p")[0]
+        window.document.write("E repetir ele onde a gente quiser, <br>como aqui, por exemplo, usando paragrafo.innerText: " + paragrafoCopia.innerText + "<br>")
+        window.document.write("Para obter a propriedade em negrito usamos paragrafo.innerHTML, ficando assim: " + paragrafoCopia.innerHTML)
+        paragrafoCopia.style.color = "yellow"
+        corpo.style.background = "rebeccapurple"
+        window.document.write("Podemos selecionar o ID também utilizando window.document.getElementById() assim: ")
+        var spanId = window.document.getElementById("msg")
+        var contador = 0
+        var intervalo = setInterval(function() {//Adiciona o intervalo a cada 1ms, sem travar a thread principal
+        contador++;
+        if (contador < 1200) {//condição
+            spanId.innerText = "Clique aqui";
+        } else if (contador < 2400) {
+            spanId.innerText = "Clica em mim agora";
+        } 
+        if (contador >= 2400) {
+            contador = 0;  // reinicia a contagem
+        }
+        }, 1);
+        spanId.addEventListener('click', function() {
+        clearInterval(intervalo); // pausa o loop ao clicar
+        spanId.innerText = "Pausado!";
+        })
+    </script>
+</body>
+</html>

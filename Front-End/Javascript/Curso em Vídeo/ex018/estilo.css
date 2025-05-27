@@ -1,0 +1,28 @@
+body{
+    background: rebeccapurple;
+    font: normal 18pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    padding: 15px;
+    width: 600px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+footer{
+color: white;
+text-align: center;
+font: italic 10pt Arial;
+}
+#valores{
+    width: 140px;
+    height: 100px;
+}
+#alinhartexto{
+    text-align: center;
+}

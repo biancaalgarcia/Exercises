@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando os números</title>
+</head>
+<style>
+    h1{
+        color: yellow;
+    }
+    body{
+        font: normal 18pt Comic Sans MS;
+        background: rebeccapurple;
+        color: white;
+    }
+    input{
+        font: normal 18pt Comic Sans MS;
+        width: 100px;
+    }
+    div#resultado{
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name= "valor1"> +
+    <input type="number" name = "valor2">
+    <input type="button" value = "Somar" onclick="somar()">
+    <div id ="resultado">Resultado</div>
+    <script>
+        function somar(){
+        let v1 = Number(window.document.getElementsByName("valor1")[0].value)
+        let v2 = Number(window.document.getElementsByName("valor2")[0].value) 
+        let s = v1 + v2
+        let resposta = window.document.getElementById("resultado")
+        resposta.innerHTML = `A soma de ${v1} e ${v2} é ${s}`
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+       body {
+    background-color: #3B0A59;
+    color: #E0D6F7;
+    font-family: sans-serif;
+}
+
+div {
+    width: 175px;
+    color: #CBA6F7;
+    background-color: #4E2A84;
+    padding: 10px;
+    border-radius: 8px;
+    transition: color 0.3s ease;
+}
+
+div > p {
+    display: none;
+    margin-top: 10px;
+}
+
+div:hover {
+    color: #F5C25A;
+}
+
+div:hover > p {
+    display: block;
+    color: #F5C25A;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Parece um texto normal
+        <p>Mas quando passa o mouse acontece isso aqui</p>
+    </div>
+    
+</body>
+</html>

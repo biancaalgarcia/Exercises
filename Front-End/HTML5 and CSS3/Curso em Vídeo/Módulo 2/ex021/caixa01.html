@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkslategray;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; */
+    padding: 10px;
+    /*padding: 10px 10px 10px 10px; Pode ser simplificado nessas linhas*/
+    /* margin: auto; para centralizar caixa no meio */
+    outline: 5px dashed salmon;
+}
+
+a {
+    /* display: inline; */
+    display: block;
+    /* display: inline-block; */
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red;
+}
+p#pontilhado{
+    border-width: 5px;
+    border-style: dotted;
+}
+p#tracejado{
+    border-width: 5px;
+    border-style: dashed;
+}
+p#tresdimensoes{
+    border-width: 20px;
+    border-style: groove;
+    border-color: red;
+}
+p#solido{
+    border-width: 5px;
+    border-style: solid;
+}
+p#duplas{
+    border-width: 5px;
+    border-style: double;
+}
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    <p id="solido">Tem bordas solidas</p>
+    <p id="tracejado">Tem bordas tracejadas</p>
+    <p id="pontilhado">Tem também bordas pontilhadas</p>
+    <p id="tresdimensoes">Temos até borda tridimensional</p>
+    <p id="duplas">Temos bordas duplas também</p>
+</body>
+</html>

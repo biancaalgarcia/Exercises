@@ -1,0 +1,40 @@
+@charset "UTF8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*em HTML é id = em CSS é #
+em HTML é class = em CSS é .
+*/
+
+body {
+    background-color: #1E1B2E;
+    color: #EDEDED;
+}
+
+h1#tituloprincipal {
+    background-color: #6A0DAD;
+    text-align: center;
+    height: 200px;
+    padding-top: 100px;
+}
+
+h1#titulohtml,
+h1#titulocss {
+    background-color: #8E44AD;
+    color: #EDEDED;
+    text-align: center;
+}
+
+.basico {
+    color: #BB8FCE;
+}
+
+.intermediario {
+    color: #9B59B6;
+}
+
+.avancado {
+    color: #5B2C6F;
+}

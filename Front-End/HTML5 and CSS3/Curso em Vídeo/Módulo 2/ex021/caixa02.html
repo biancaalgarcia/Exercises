@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 8px 4px 14px 1px rgba(0, 0, 0, 0.651);
+            /* border-radius: 10px 20px 40px 30px; */
+            border-radius: 20px 0px;
+            /*Configuração para as diagonais do border-radius*/
+        }
+
+        footer {
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0px;
+            color: white;
+            text-align: center;
+        }
+
+        article>aside {
+            background-color: red;
+        }
+
+        nav>a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            margin-right: 30px;
+            color: white;
+        }
+
+        nav {
+            background-color: gray;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 30px;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntox">
+
+        </section>
+        <section id="assuntoy">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cupiditate illo doloribus nam vel
+                    laboriosam quam, explicabo, harum optio ducimus deserunt laudantium ex minus exercitationem labore
+                    facere libero. Vitae, sunt?</p>
+                <aside>Artigo criado por Bianca Garcia</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+   #   = id
+   .   = class
+   :   = pseudo-class
+   ::  = pseudo-element
+   >   = children
+*/
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            color: purple;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(57, 1, 88);
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        a::after{
+            content: " [link]";
+            font-weight: normal;
+        }
+        .especial::before{
+            content: "→";
+        }
+        .especial::after{
+            content: "←";   
+        }
+        .especial{
+            background-color: rgba(255, 0, 0, 0.247);
+            border-radius: 8px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/biancaalgarcia">Meu repositório</a></li>
+        <li><a href="www.youtube.com" class="especial">Youtube</a></li>
+        <li><a href="www.google.com">Google</a></li>
+    </ul>
+</body>
+</html>
